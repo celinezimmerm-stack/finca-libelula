@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Finca Reserva La Libélula</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #2f5d50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* MAP */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2f5d50;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Finca – Reserva La Libélula</h1>
+  <p>Preservamos, cultivamos y habitamos el territorio en coherencia con la vida.</p>
+  <a href="#contexto" class="btn">Conoce el proyecto ↓</a>
+</section>
+
+<!-- CONTEXTO -->
+<section id="contexto">
+  <h2>¿Dónde estamos?</h2>
+  <p>
+    Estamos ubicados en el Valle de San Blas, a 30 minutos del casco urbano de San Carlos, Antioquia.
+    Hacemos parte de un corredor ecologico de mas de 800 hectareas constituido por reservas naturales privadas que trabajan alrededor de tres pilares fundamentales :
+    la preservación, la soberanía alimentaria y la integración con la población local.
+  </p>
+
+  <iframe 
+    src="https://www.google.com/maps?q=San%20Carlos%20Antioquia&output=embed">
+  </iframe>
+</section>
+
+<!-- EJES -->
+<section>
+  <h2>Nuestro proyecto</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="preservacion.jpg" alt="">
+      <h3>Preservación</h3>
+      <p>
+        Conservamos la biodiversidad a través de nuestra Reserva Natural de la Sociedad Civil.
+        Desarrollamos procesos de pasantias y estudios con Universidades colombianas e internacionales, y proyectamos un banco de hábitat en cooperación con la ONG Change The World y la Fundación Darien.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="agroecologia.jpg" alt="">
+      <h3>Producción agroecológica</h3>
+      <p>
+        Granja integral en circuito cerrado. Producción de queso organico, carne de cerdo de calidad y tilapia negra.
+        Cultivo y transformación de cacao y sacha inchi, nuestros productos estrella.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="minga.jpg" alt="">
+      <h3>Territorios sustentables</h3>
+      <p>
+        xxxxx
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section>
+  <h2>Galería</h2>
+  <p>Algunas imágenes de la vida en nuestra finca-reserva 🌿</p>
+
+  <div class="gallery">
+
+    <img src="galeria1.jpg" alt="">
+    <img src="galeria2.jpg" alt="">
+    <img src="galeria3.jpg" alt="">
+    <img src="galeria4.jpg" alt="">
+    <img src="galeria5.jpg" alt="">
+    <img src="galeria6.jpg" alt="">
+    <img src="galeria7.jpg" alt="">
+    <img src="galeria8.jpg" alt="">
+    <img src="galeria9.jpg" alt="">
+    <img src="galeria10.jpg" alt="">
+    <img src="galeria11.jpg" alt="">
+    <img src="galeria12.jpg" alt="">
+    
+
+  </div>
+</section>
+
+<!-- TIENDA -->
+<section>
+  <h2>Nuestros productos</h2>
+  <p>
+    Cultivamos, transformamos y cuidamos cada producto desde la finca.
+  </p>
+
+  <img src="cacao.jpg" width="300">
+  <img src="sacha.jpg" width="300">
+
+  <br>
+
+  <a href="https://la-libelula.cercia.co" target="_blank" class="btn">
+    Ir a la tienda
+  </a>
+</section>
+
+<!-- REDES -->
+<section>
+  <h2>Conecta con nosotros</h2>
+
+<p>
+  <a href="https://wa.me/573206922954" target="_blank" class="btn">
+    Escríbenos por WhatsApp
+  </a>
+</p>
+
+  <p>
+    <a href="https://instagram.com/finca.la.libelula" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/p/Finca-Reserva-La-Lib%C3%A9lula-61552010913497/" target="_blank">Facebook</a>
+  </p>
+
+ <h3>Aliados</h3>
+
+<p>
+  <a href="https://world-changers.org/portal/latin-america/" target="_blank">
+    Change the World Colombia
+  </a>
+  <br>
+  <a href="https://fundaciondarien.org/" target="_blank">
+    Fundación Darién
+  </a>
+</p>
+
+<p>
+  Más de 10 años trabajando en procesos de conservación y desarrollo territorial.
+</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Finca La Libélula · San Carlos, Antioquia</p>
+  <p>Visitas · Voluntariados · Alianzas</p>
+</footer>
+
+</body>
+</html>
