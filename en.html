@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Libélula Nature Reserve & Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+    .language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  gap: 8px;
+}
+
+.language-switcher a {
+  background: rgba(255,255,255,0.9);
+  color: #2f5d50;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.language-switcher a:hover {
+  background: #2f5d50;
+  color: white;
+}
+
+    .social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+    
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #2f5d50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* MAP */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2f5d50;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+   <div class="language-switcher">
+
+  <a href="index.html" title="Español">
+    🇪🇸 ES
+  </a>
+
+  <a href="fr.html" title="Français">
+    🇫🇷 FR
+  </a>
+
+  <a href="en.html" title="English">
+    🇬🇧 EN
+  </a>
+
+    </div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>La Libélula Nature Reserve & Farm</h1>
+  <p>We preserve, cultivate, and inhabit the land in harmony with life.</p>
+<a href="#proyecto" class="btn">Conoce el proyecto ↓</a>
+</section>
+
+<!-- CONTEXTO -->
+<section id="contexto">
+  <h2>Where are we located?</h2>
+  <p>
+    We are located in the San Blas Valley, 30 minutes from the town of San Carlos, Antioquia. 
+    We are part of an ecological corridor of more than 800 hectares made up of private nature reserves working around three fundamental pillars: 
+    conservation, food sovereignty, and integration with the local community. </p>
+  </p>
+
+  <iframe 
+    src="https://www.google.com/maps?q=San%20Carlos%20Antioquia&output=embed">
+  </iframe>
+</section>
+
+<!-- EJES -->
+<section id="proyecto">
+  <h2>Our project</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="preservacion.jpg" alt="">
+      <h3>Preservation</h3>
+      <p>
+        We protect biodiversity through our Civil Society Nature Reserve. 
+        We develop internship and research programs with Colombian and international universities, and we are working 
+        toward the creation of a habitat bank in partnership with the NGO Change the World and the Darién Foundation.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="agroecologia.jpg" alt="">
+     <h3>Agroecological Production</h3> <p> An integrated farm operating in a closed-loop system. Production of organic cheese, 
+       high-quality pork, and black tilapia. Cultivation and processing of cacao and sacha inchi, our flagship products. </p>
+    </div>
+
+    <div class="card">
+      <img src="minga.jpg" alt="">
+      <h3>Sustainable Territories</h3> <p> We build sustainable territories through collective work, 
+        integrating local communities and strengthening the region through community workdays and collaborative initiatives. </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section>
+  <h2>Gallery</h2> 
+  <p>Some images of life on our farm reserve 🌿</p>
+  <div class="gallery">
+
+    <img src="galeria1.jpg" alt="">
+    <img src="galeria2.jpg" alt="">
+    <img src="galeria3.jpg" alt="">
+    <img src="galeria4.jpg" alt="">
+    <img src="galeria5.jpg" alt="">
+    <img src="galeria6.jpg" alt="">
+    <img src="galeria7.jpg" alt="">
+    <img src="galeria8.jpg" alt="">
+    <img src="galeria9.jpg" alt="">
+    <img src="galeria10.jpg" alt="">
+    <img src="galeria11.jpg" alt="">
+    <img src="galeria12.jpg" alt="">
+    
+
+  </div>
+</section>
+
+<!-- TIENDA -->
+<section>
+  <h2>Our Products</h2> 
+  <p> We grow, process, and care for every product directly on the farm. </p>
+
+  <img src="cacao1.jpg" width="300">
+  <img src="sacha1.jpg" width="300">
+
+  <br>
+
+  <a href="https://la-libelula.cercia.co" target="_blank" class="btn">
+   Visit the Store
+  </a>
+</section>
+
+<!-- REDES -->
+<section>
+  <h2>Connect With Us</h2>
+
+<p>
+  <a href="https://wa.me/573206922954" target="_blank" class="btn">
+    Message Us on WhatsApp
+  </a>
+</p>
+
+<div class="social-icons">
+
+  <a href="https://instagram.com/finca.la.libelula" target="_blank">
+    <img src="instagram.png" alt="Instagram">
+  </a>
+
+  <a href="https://www.facebook.com/people/Finca-Reserva-La-Lib%C3%A9lula/61552010913497/" target="_blank">
+    <img src="facebook.png" alt="Facebook">
+  </a>
+
+  <a href="https://wa.me/573206922954" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
+
+</div>
+
+ <h3>Partners</h3>
+
+<p>
+  <a href="https://world-changers.org/portal/latin-america/" target="_blank">
+    Change the World Colombia
+  </a>
+  <br>
+  <a href="https://fundaciondarien.org/" target="_blank">
+    Fundación Darién
+  </a>
+</p>
+
+<p>
+More than 10 years of experience working on conservation and territorial development initiatives.
+</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Finca La Libélula · San Carlos, Antioquia</p>
+  <p>Visits · Volunteering · Partnerships</p>
+</footer>
+
+</body>
+</html>
